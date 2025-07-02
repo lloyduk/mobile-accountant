@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#balance {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+#warning-msg {
+  background: #ffe5e5;
+  border: 1px solid #ff4d4d;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #d8000c;
+}
+
+#summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#summary div {
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+input, select, button {
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+#filters select,
+#filters input {
+  flex: 1;
+  min-width: 45%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  background: #fff;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  flex-direction: column;
+}
+
+li.income {
+  border-left: 6px solid #2ecc71;
+}
+
+li.expense {
+  border-left: 6px solid #e74c3c;
+}
+
+li > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li small {
+  color: #666;
+}
+
+button.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c0392b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 0.75rem;
+}
